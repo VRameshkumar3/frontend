@@ -1,0 +1,90 @@
+<html>
+<head>
+<title> </title>
+</head>
+<style>
+body{
+  background-image: url("https://www.ridgedesign.ie/wp-content/uploads/2011/02/Ridge-Design-Website-Design-Background.jpg");
+  width:100%;
+  height:120vh;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  height: 70vh;
+  margin:  auto;
+}
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  opacity: .7;
+}
+label{
+  font-size: 4vh;
+  text-shadow: 1px 1px 1px black;
+  color:white;
+  margin-left: 15px;
+  font-weight: lighter;
+}
+input{
+  width: 70vh;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+button{
+  width: 20vh;
+  margin:auto;
+  font-size: 20px;
+  font-weight: bolder;
+  background: rgba(255, 255, 255, .03);
+  opacity:.8;
+  border-radius: 10px;
+  text-shadow: 2px 2px 1px grey;
+}
+</style>
+<script>
+function hello()
+{
+var password = document.getElementById("abc");
+if(password.value =="")
+{
+alert("password should be must in 10 character");
+return false;
+}
+else
+{
+true;
+}
+} 
+</script>
+<body>
+<div>
+    <form onsubmit="return hello()" action="secondpage.html">
+      <h1>Create New Account</h1>
+      <label>First Name</label>
+      <input type="text">
+      <label>Last Name</label>
+      <input type="text">
+      <label>Email id</label>
+      <input type="mail">
+      <label>Ph No</label>
+      <input type="number">
+	  <label>Password</label>
+	  <input id="abc" type="password">
+      <button onclick= "hello()" type="submit"> Next </button>
+    </form>
+</body>
+</html>
